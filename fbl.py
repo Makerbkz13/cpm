@@ -217,7 +217,7 @@ def dump_nomor():
 		print(f"\r[{H}!{P}] {nomor} | {len(dump)} ", flush=True, end="")
 		if nomor not in dump: dump.append(nomor)
 		if len(dump)>=5001: break
-	print('\n\r                        '); pilih_metode(["123456","12345678","katasandi","bismillah","rahasia","cantik")
+	print('\n\r                        '); pilih_metode(["123456","12345678","katasandi","bismillah","rahasia","cantik"])
 
 ### --- [ DUMP EMAIL ] --- ###
 def dump_email():
@@ -241,7 +241,7 @@ def dump_random():
 		print(f"\r[{H}!{P}] {nomor} | {len(dump)} ", flush=True, end="")
 		if nomor not in dump: dump.append(nomor)
 		if len(dump)>=5001: break
-	print('\n\r                        '); pilih_metode(["123456","12345678","password","123456789","bismillah", "cantik"])
+	print('\n\r                        '); pilih_metode(["123456","12345678","password","123456789","bismillah","cantik"])
 
 ### --- [ DUMP FILE ] --- ###
 def dump_file():
